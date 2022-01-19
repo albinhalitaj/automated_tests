@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using TS_Detyra2.Configuration;
@@ -52,7 +53,12 @@ namespace TS_Detyra2.Scenarios
         }
 
         [TearDown]
-        public void Close() => webDriver.Quit();
+        public void Close()
+        {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+                Config.TakeScreenshot(TestContext.CurrentContext.Test.Name);
+            webDriver.Quit();
+        }
     }
 
     public static class ClientData

@@ -1,4 +1,22 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=18cabc69_002Dee21_002D4833_002Dad77_002D617cf729d139/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Autorizimi_Punetorit" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.Autorizimi.Autorizimi_Punetorit&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.Autorizimi.Autorizimi_Administratorit&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.DergimiEmailave.Dergimi_Emailit_Pa_Mesazh_Valid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.DergimiEmailave.Dergimi_Emailit_Pa_Subjekt_Valid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.FiltrimiLibrave.Filtrimi_Librave_Me_Ane_Te_Nje_Kategorie&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e5ee0b53_002D4672_002D4b8c_002Da32c_002Dfd12deea8694/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Filtrimi_Librave_Me_Te_Gjitha_Kategorite" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.FiltrimiLibrave.Filtrimi_Librave_Me_Te_Gjitha_Kategorite&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.ShtimiKlientit.Regjistrimi_Klientit_Me_Te_Dhena_JoValide&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.ShtimiKlientit.Regjistrimi_Klientit_Me_Te_Dhena_Valide&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A4546C39-9C74-4909-BC6C-E7634B1E0ED7::.NETFramework,Version=v4.8::TS_Detyra2.Scenarios.FshirjaKlienteve.Fshirja_E_Nje_Klienti_Egzistues&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
 	
 	
 	

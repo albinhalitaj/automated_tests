@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using TS_Detyra2.Configuration;
 
@@ -60,8 +61,13 @@ namespace TS_Detyra2.Scenarios
         }
 
         [TearDown]
-        public void Close() => webDriver.Close();
-        
+        public void Close()
+        {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+                Config.TakeScreenshot(TestContext.CurrentContext.Test.Name);
+            webDriver.Close();
+        }
+
         private static bool CheckFileDownloaded(string filename)
         {
             var firstFile = Directory

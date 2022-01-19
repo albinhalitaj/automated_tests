@@ -41,9 +41,7 @@ namespace TS_Detyra2.Scenarios
         public void Close()
         {
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
-            {
                 Config.TakeScreenshot(TestContext.CurrentContext.Test.Name);
-            }
             webDriver.Quit();
         }
     }

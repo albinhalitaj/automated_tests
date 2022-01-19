@@ -1,5 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using TS_Detyra2.Configuration;
 
@@ -48,7 +49,14 @@ namespace TS_Detyra2.Scenarios
         }
 
         [TearDown]
-        public void Close() => webDriver.Quit();
+        public void Close()
+        {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                Config.TakeScreenshot(TestContext.CurrentContext.Test.Name);
+            }
+            webDriver.Quit();
+        }
     }
 
     public enum UserType

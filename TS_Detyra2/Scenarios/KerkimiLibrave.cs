@@ -1,5 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using TS_Detyra2.Configuration;
 
@@ -57,6 +58,11 @@ namespace TS_Detyra2.Scenarios
         private void Wait(int seconds = 0) => webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(seconds);
 
         [TearDown]
-        public void Close() => webDriver.Close();
+        public void Close()
+        {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+                Config.TakeScreenshot(TestContext.CurrentContext.Test.Name);
+            webDriver.Close();
+        }
     }
 }
